@@ -1,3 +1,9 @@
-*.aux
-*.log
-*.gz
+fr/*.aux
+fr/*.log
+fr/*.gz
+fr/*.pdf
+
+en/*.aux
+en/*.log
+en/*.gz
+en/*.pdf
