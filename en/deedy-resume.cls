@@ -8,7 +8,7 @@
 \ProcessOptions\relax
 \LoadClass{article}
 
-\usepackage[hmargin=1.25cm, vmargin=1.5cm, bottom=-1cm]{geometry} % Specifies horizontal and vertical page margins
+\usepackage[hmargin=1.25cm, vmargin=2cm, bottom=2.5cm]{geometry} % Specifies horizontal and vertical page margins
 \usepackage{url} % Required for links
 
 %----------------------------------------------------------------------------------------
