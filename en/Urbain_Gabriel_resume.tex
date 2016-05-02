@@ -19,19 +19,42 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
 \documentclass[a4paper]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
 
-\begin{document}
+% % Coordinates
+% Comment this line for blinding the coordinates
+\def\notblinded{}
 
+\ifdefined\notblinded
+\def\name{Gabriel}
+\def\surname{Urbain}
+\def\address{135, SintPietersaalststraat \hspace{5pt} 9000 Gent \hspace{5pt} Belgium}
+\def\website{\url{http://be.linkedin.com/in/gurbain}}
+\def\email{\url{gabriel.urbain@gmail.com}}
+\def\phone{(+32) 484 102088}
+\else
+\def\name{Name}
+\def\surname{Surname}
+\def\address{Address}
+\def\website{\url{Website}}
+\def\email{\url{E-mail}}
+\def\phone{Phone}
+\fi
+
+
+\begin{document}
+	
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION
 %----------------------------------------------------------------------------------------
 
 \lastupdated % Print the Last Updated text at the top right
-\namesection{Gabriel}{Urbain}{ % Your name
-135, SintPietersaalststraat \hspace{5pt} 9000 Gent \hspace{5pt} Belgium\\
-\url{http://be.linkedin.com/in/gurbain} \\ % Your website, LinkedIn profile or other web address
-\url{gabriel.urbain@gmail.com} | (+32) 484 102088 % Your contact information
+
+\namesection{\name}{\surname}{ % Your name
+	\address\\
+	\website\\ % Your website, LinkedIn profile or other web address
+	\email \hspace{5pt} | \hspace{5pt} \phone % Your contact information
 }
 
 \sectionspace % Some whitespace after the section
