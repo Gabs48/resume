@@ -25,6 +25,7 @@
 % % Coordinates
 % Comment this line for blinding the coordinates
 \def\notblinded{}
+\pagenumbering{gobble}
 
 \ifdefined\notblinded
 \def\name{Gabriel}
@@ -49,10 +50,9 @@
 %	TITLE SECTION
 %----------------------------------------------------------------------------------------
 
-\lastupdated % Print the Last Updated text at the top right
+%\lastupdated % Print the Last Updated text at the top right
 
 \namesection{\name}{\surname}{ % Your name
-	\address\\
 	\website\\ % Your website, LinkedIn profile or other web address
 	\email \hspace{5pt} | \hspace{5pt} \phone % Your contact information
 }
@@ -63,89 +63,91 @@
 %----------------------------------------------------------------------------------------
 \vspace{10pt}
 
-\section{Experience}
+\begin{minipage}[b]{0.62\linewidth}
+	
+	%------------------------------------------------
+	% Experience
+	%------------------------------------------------
+	
+	\section{Experience}
+	\vspace{5pt}
+	\runsubsection{UGent}
+	\descript{| \hspace{2pt} PhD Student - Research Assistant - IDLab/imec}
+	\location{Since October 2015 | Ghent, Belgium}
+	Topic: Brain-inspired CPG architectures for robust locomotion learning on quadruped robots.
+	
+	\vspace{10pt}
+	
+	%------------------------------------------------
+	
+	\runsubsection{UMons}
+	\descript{| \hspace{2pt} Researcher at the numediart Institute}
+	\location{February - October 2015 | Mons, Belgium}
+	
+	\vspace{5pt}
+	
+	
+	%------------------------------------------------
+	% Formation
+	%------------------------------------------------
+	
+	\section{Education}
+	\vspace{5pt}
+	
+	\runsubsection{Massachusetts Institute of Technology\\}
+	\vspace{2pt}
+	\descript{Master Project at the Space Systems Laboratory}
+	\location{June 2014 – November 2014 | Cambridge, USA}
+	
+	\vspace{10pt}
+	%------------------------------------------------
+	
+	\runsubsection{ISAE | SUPAERO\\}
+	\vspace{2pt}
+	\descript{Master of Science in AeroSpace Engineering}
+	\location{August 2012 – November 2014 | Toulouse, France}
+	Double Master Degree trough \textit{T.I.M.E.} Network. Major : Space Systems, Telecommunications and Networks.
+	
+	\vspace{10pt}
+	%------------------------------------------------
+	
+	\runsubsection{UMONS | Faculté Polytechnique\\}
+	\vspace{2pt}
+	\descript{Bachelor and Master of Science in Electrical Engineering}
+	\location{September 2008 – November 2014 | Mons, Belgium}
+	Major: Multimedia et Telecommunications. Graduated with Honors.
+	
+	\vspace{5pt}
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.33\linewidth}
+	
+	%------------------------------------------------
+	% Bio
+	%------------------------------------------------
+	\section{Bio}
+	\vspace{5pt}
+	I'm a PhD student involved in the neurorobotics branch of the European Human Brain Project. I'm pursuing research on embodiment, brain-inspired neural controllers and reinforcement learning for locomotion with robots.
+	
+	I've studied engineering both at University of Mons, Belgium and Supaero, France and did my Master thesis at MIT in USA. Among others, I've taken part in projects in computer vision, music information retrieval and space robotics.
+	
+	I like hiking, playing drums, trumpet and piano and I gladly involve in associations or committees with cultural and educational impact like iRobotique and Museomix where I'm responsible in administration and operations.
+	
+	\vspace{5pt}
+	
+	%------------------------------------------------
+	% Langues
+	%------------------------------------------------
+	
+	\section{Languages}
+	\vspace{5pt}
+	\textbf{French} (C2)   \textbullet{}  \textbf{English} (C1 - TOEFL IBT 105/120 in 2014)   \textbullet{}   \textbf{Dutch} (B1)   \textbullet{}\\   \textbf{Spanish} (A2)
+	\vspace{10pt}
+	
+\end{minipage}
+
 \vspace{5pt}
-\runsubsection{UGent}
-\descript{| \hspace{2pt} PhD Student - Research Assistant at the IDLab - imec}
-\location{Since October 2015 | Ghent, Belgium}
-Topic: \textit{Brain-inspired CPG architectures for robust locomotion learning on quadruped robots.}\\
-Human Brain Project. Neurorobotics branch.\\
-
-\vspace{10pt}
-
-%------------------------------------------------
-
-\runsubsection{UMons}
-\descript{| \hspace{2pt} Researcher at the numediart Institute}
-\location{February - October 2015 | Mons, Belgium}
-Topic: \textit{Development of a Search Engine Based on Audio Similarities for Large Collections of Foley Sounds.}\\
-Research in partnership with Dame Blanche SA  and CETIC. The produced algorithm is currently in the process of patenting.
-
-\vspace{10pt}
-%------------------------------------------------
-
-\runsubsection{Thales Alenia Space}
-\descript{| \hspace{2pt} Research and Innovation Internship}
-
-\location{August - September 2013 | Charleroi, Belgium}
-Topic: \textit{Feasibility Analysis of an Electro-Mechanical Control System for Ariane Rocket Boosters}. Supervisor: Prof. Dr. Marc Bekemans.
-
-\vspace{10pt}
-%------------------------------------------------
-
-\runsubsection{UMONS}
-\descript{| \hspace{2pt} Research Initiation Internship}
-\location{July - August 2011 | Mons, Belgium}
-Topic: \textit{Semi-Automatic Creation of a 3D Model for the City of Mons}. Supervisor: Prof. Dr. T. Dutoit. IT Cluster
-
-\vspace{10pt}
-%------------------------------------------------
-
-\runsubsection{UMONS}
-\descript{| \hspace{2pt} Research Initiation Internship}
-\location{July - August 2010 | Mons, Belgium}
-Topic: \textit{Implementation of C/C++ Libraries in TRNSYS 16.1 for Heat Pump Study}. Supervisor: R. Lepore. Energy Cluster
-
-\vspace{15pt}
-
-%------------------------------------------------
-% Formation
-%------------------------------------------------
-
-\section{Education}
-\vspace{5pt}
-
-\runsubsection{Massachusetts Institute of Technology\\}
-\vspace{2pt}
-\descript{Master Project at the Space Systems Laboratory}
-\location{June 2014 – November 2014 | Cambridge, USA}
-Topic: \textit{Calibration and Fusion of Stereoscopic and Time-of-Flight Cameras for Zero Gravity Targets Inspection}. Supervisor: Dr. Alvar Saenz-Otero. Passed with the highest mention.
-
-\vspace{10pt}
-%------------------------------------------------
-
-\runsubsection{ISAE | SUPAERO\\}
-\vspace{2pt}
-\descript{Master of Science in AeroSpace Engineering}
-\location{August 2012 – November 2014 | Toulouse, France}
-Double Master Degree trough \textit{T.I.M.E.} Network. Major : Space Systems, Telecommunications and Networks.
-
-\vspace{10pt}
-%------------------------------------------------
-
-\runsubsection{UMONS | Faculté Polytechnique\\}
-\vspace{2pt}
-\descript{Master of Science in Electrical Engineering}
-\location{September 2011 – November 2014 | Mons, Belgium}
-Major: Multimedia et Telecommunications.
-Graduated with Honors.
-
-\vspace{3pt}
-\descript{Bachelor of Science in Engineering}
-\location{September 2008 – June 2011 | Mons, Belgium}
-Graduated with Honors.
-
-\vspace{15pt}
 
 %------------------------------------------------
 % Publications
@@ -153,6 +155,7 @@ Graduated with Honors.
 
 \section{Publications}
 
+\begin{flushleft}
 \textbf{Morphological Properties of Mass-Spring Networks for Optimal Locomotion Learning}. \\
 G. Urbain, J. Degrave, B. Carette, F. wyffels and J. Dambre. In \textit{Frontiers in Neurorobotics}. 2017
 
@@ -163,75 +166,9 @@ G. Urbain, C. Frisson, A. Moinet and T. Dutoit. In: \textit{Audio Mostly - A con
 \vspace{5pt}
 \textbf{INSPECT Sensor Suite for On-Orbit Inspection and Characterization with Extravehicular Activity Spacecraft}.\\
 D. Steinberg, T. Sheerin and G. Urbain. In: \textit{45th International Conference on Environmental Systems}. 2015
+\end{flushleft}
 
-\vspace{15pt}
-
-
-\begin{minipage}[b]{0.5\linewidth}
-	
-	%------------------------------------------------
-	% Conf, workshops
-	%------------------------------------------------
-	
-	\section{Workshops -  Symposiums}
-	
-	\vspace{5pt}
-	\textbf{4th HBP School | Future of Artificial Intelligence} \\
-	Lightning talk and poster session. June 2017, Obergurgl, Austria.
-	
-	\vspace{5pt}
-	\textbf{1st Neurorobotics Platform User Workshop} \\
-	April 2017, Munich, Germany.
-
-	\vspace{5pt}
-	\textbf{3rd HBP School | Future of Neuroscience} \\
-	Lightning talk and poster session. December 2016, Obergurgl, Austria.
-	
-	\vspace{5pt}
-	\textbf{4th HBP Education Workshop | Future of Computing} \\
-	Lightning talk and poster session. January 2016. Manchester, UK.
-	
-	\vspace{5pt}
-	\textbf{5th Cubesat Symposium and the 6th QB50 Workshop} \\
-	Lightning talk and poster session. June 2013. Brussels, Belgium.
-	
-	\vspace{5pt}
-\end{minipage}
-\hfill
-\begin{minipage}[b]{0.47\linewidth}
-	
-	%------------------------------------------------
-	% Skills
-	%------------------------------------------------
-	
-	\section{IT Skills}
-	\vspace{5pt}
-	\subsection{Software}
-	\vspace{2pt}
-	\location{Operating Systems | Middleware}
-	Linux \textbullet{} Embedded Linux \textbullet{} Windows \textbullet{} ROS\\
-	\vspace{3pt}
-	\location{Programming}
-	C \textbullet{} C++ \textbullet{} Python \textbullet{} Matlab \textbullet{} Simulink \textbullet{} Java \textbullet{} Bash \textbullet{} VHDL \textbullet{} OpenCV \textbullet{} Git \textbullet{} \LaTeX\\
-	\vspace{3pt}
-	\location{Embedded Platforms}
-	Low-level development on: X86 \textbullet{} Atmel AVR (Arduinos, self-designed boards) \textbullet{} ARM (BeagleBone, RaspberryPI, Odroid) \textbullet{} Neuromorphic Hardware (SpiNNaker, BrainScaleS)
-	\vspace{5pt}
-	
-	\subsection{Technical}
-	Embedded Systems \textbullet{}
-	Image and Audio Processing \textbullet{} Neural Networks \textbullet{} Machine Learning \textbullet{} Robotics \textbullet{} Electronics \textbullet{} Telecommunications \textbullet{} Space Systems
-\end{minipage}
-\vspace{15pt}
-
-%------------------------------------------------
-% Langues
-%------------------------------------------------
-
-\section{Languages}
 \vspace{5pt}
-\textbf{French} (Native. C2)   \textbullet{}  \textbf{English} (Fluent. C1. TOEFL IBT 105/120 in 2014)   \textbullet{}   \textbf{Dutch} (Medium. B1)   \textbullet{}   \textbf{Spanish} (Basic. A2)
-\vspace{15pt}
 
 
 %------------------------------------------------
@@ -243,17 +180,9 @@ D. Steinberg, T. Sheerin and G. Urbain. In: \textit{45th International Conferenc
 
 %------------------------------------------------
 
-\runsubsection{iRobotique}
-\descript{| \hspace{2pt} Administrator}
+\runsubsection{iRobotique association}
+\descript{| \hspace{2pt} Administrator and Software Manager}
 \location{2004 - 2017 | Mons, Belgium}
-\vspace{5pt} % Hacky fix for awkward extra vertical space
-\begin{tightitemize}
-	\item Design and development of robotic platform for museum guided tours (from 2014)
-	\item Presentation of the association and its projects in different events: Mariemont Cultural Mediation Symposium, Museomix, Open FabLab Mons, Make Wallonia, Business To Museum and Tourism, ... (from 2014)
-	\item Robot design for a Eurobot Junior competitions (2005, 2006, 2008) and Eurobot (2011, 2013)
-	\item Creativity Award (2006), Belgian Junior Champions Award (2008), 8th European Junior position (2008), 7th European position (2013)
-	\item Atmel AVR, OMAP processor and FPGA Programming Classes (2010-2012)
-\end{tightitemize}
 
 \vspace{12pt}
 
@@ -262,20 +191,14 @@ D. Steinberg, T. Sheerin and G. Urbain. In: \textit{45th International Conferenc
 \runsubsection{Museomix Belgium}
 \descript{| \hspace{2pt} Administrator and Organiser}
 \location{2015 - 2017 | Brussels, Belgium}
-Organization of hackatons and events confronting people from technological and cultural backgrounds to define the future of museum mediation in Belgium. Communication and website manager.
 
 \vspace{12pt}
 
 %------------------------------------------------
 
-\runsubsection{Art and Campus Activities}
+\runsubsection{Campus Activities}
 \location{}
 \vspace{3pt}
-Gent Universitair Symphonisch Orkest (2016-2017) \textbullet{} Sailing (2014) \textbullet{} CubeSat (2012-2014) \textbullet{} Scuba Diving (2013-2014) \textbullet{} Supaero Jazz Band (2012-2014) \textbullet{} Rowing (2013) \textbullet{} Winner of a GDF Suez scholarship (2012) \textbullet{}  Student Culture Committee (2010-2011) \textbullet{} Student Regional Committee (2009-2012) \textbullet{} Board of Faculty (2011-2012)  \textbullet{} Auto-evaluation Commission (2011-2012) \textbullet{} Board of Libraries (2010-2011) \textbullet{} Jazz Band Baudour (2001-2011) \textbullet{} Drums \textbullet{} Trumpet \textbullet{} Piano \textbullet{} Choral music
-
-
-\sectionspace % Some whitespace after the section
-\vspace{10pt}
-
+Gent Universitair Symphonisch Orkest (2016-2017) \textbullet{} Sailing (2014) \textbullet{} CubeSat (2012-2014) \textbullet{} Scuba Diving (2013-2014) \textbullet{} Supaero Jazz Band (2012-2014) \textbullet{} Rowing (2013) \textbullet{} Student Culture Committee (2010-2011) \textbullet{} President of Regional Student Committee (2009-2012) \textbullet{} Student representative for the board of Faculty (2011-2012) \textbullet{} Student representative for the University Evaluation Commission (2011-2012) \textbullet{} Student representative for the Board of Libraries (2010-2011) \textbullet{} Jazz Band Baudour (2001-2011) \textbullet{} Drums \textbullet{} Trumpet \textbullet{} Piano \textbullet{} Choral music
 
 \end{document}
