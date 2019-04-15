@@ -29,6 +29,7 @@
 \ifdefined\notblinded
 \def\name{Gabriel}
 \def\surname{Urbain}
+\def\description{I am a PhD engineer student with a background in Electronics, Computer Sciences and Aerospace. I am looking for a R\&D position in company specialized in advanced robotics, using state-of-art perception, computation and actuation techniques. I fancy challenging projects with a high societal, economical and environmental impact where I can fully invest my passion and time.}
 \def\address{23, Onafhankelijkheidslaan \hspace{5pt} 9000 Gent \hspace{5pt} Belgium}
 \def\website{\url{http://gurbain.be/}}
 \def\email{\url{gabriel.urbain@ugent.be}}
@@ -36,6 +37,7 @@
 \else
 \def\name{Urbain}
 \def\surname{Gabriel}
+\def\description{I am a PhD engineer student with a background in Electronics, Computer Sciences and Aerospace. I am looking for a R\&D position in company specialized in advanced robotics, using state-of-art perception, computation and actuation techniques. I fancy challenging projects with a high societal, economical and environmental impact where I can fully invest my passion and time.}
 \def\address{Address}
 \def\website{\url{Website}}
 \def\email{\url{E-mail}}
@@ -44,76 +46,75 @@
 
 
 \begin{document}
-	
+
 %----------------------------
 %	TITLE SECTION
 %----------------------------
 
 \lastupdated % Print the Last Updated text at the top right
 
-\namesection{\name}{\surname}{ % Your name
-	\address\\
-	\website\\ % Your website, LinkedIn profile or other web address
-	\email \hspace{5pt} | \hspace{5pt} \phone % Your contact information
+\namesection{\name}{\surname}{\description}{ % Your name
+\newline\address\\
+\website \hspace{5pt} | \hspace{5pt} \email \hspace{5pt} | \hspace{5pt} \phone % Your contact information
 }
 
 \sectionspace % Some whitespace after the section
 %----------------------------
 %	FIRST PAGE
 %----------------------------
-\vspace{10pt}
+\vspace{4pt}
 
 \section{Experience}
 \vspace{5pt}
 \runsubsection{UGent}
 \descript{| \hspace{2pt} PhD Student - Research Assistant at AIRO Group, IDLab - imec}
 \location{October 2015 - Present | Gent, Belgium}
-Topic: \textit{Locomotion of compliant quadruped robots at the crossing of AI and Neurosciences.} Human Brain Project. Neurorobotics branch. \textit{Transversal activities }: doctoral schools program (2015-present) \textbullet{} Gent Universitair Symphonisch Orkest (2016-present) \textbullet{} Gent Alumni and Staff Orchestra (2017-present) \textbullet{} HBP Student Ambassador and Representative (2017-present)
-\vspace{10pt}
+Topic: \textit{Locomotion of compliant quadruped robots at the crossing of AI and Neurosciences.} Human Brain Project. Neurorobotics branch ({\url{http://neurobotics.net/}). \runparagraph{Main topics}: compliant robotics, locomotion, central pattern generators, supervised learning, reinforcement learning, artificial neural networks, spiking neural networks, automation. \\
+\runparagraph{Doctoral schools}: machine learning, auditory perception and computation, 3D modeling, career building, English presentation skills. \\
+\runparagraph{Teaching Assistant}: embedded prototyping - industrial engineers campus Kortrijk (2016), digital electronics - FPGA programming class (2016-2018), robotics - labs and project (2018)
+\vspace{9pt}
 
 %------------------------------------------------
 
 \runsubsection{Italian Institute of Technology}
 \descript{| \hspace{2pt} Visiting PhD Reseacher}
 \location{July - October 2018 | Genoa, Italy}
-Topic: \textit{Machine Learning for low-level locomotion on thee HyQ robot}.\\
-Dynamic Legged Systems Lab. Supervisor: Dr. Victor Barasuol.
+Topic: \textit{Machine Learning for low-level locomotion on thee HyQ robot}. Dynamic Legged Systems Lab.
 
-\vspace{10pt}
+\vspace{9pt}
 %------------------------------------------------
 
 \runsubsection{UMons}
 \descript{| \hspace{2pt} Researcher at the numediart Institute}
 \location{February - October 2015 | Mons, Belgium}
-Topic: \textit{Development of a Search Engine Based on Audio Similarities for Large Collections of Foley Sounds.}\\
-Research in partnership with Dame Blanche SA and CETIC.
+Topic: \textit{Development of a Search Engine Based on Audio Similarities for Large Collections of Foley Sounds.} Research in partnership with Dame Blanche SA and CETIC.
 
-\vspace{10pt}
+\vspace{9pt}
 %------------------------------------------------
 
 \runsubsection{Thales Alenia Space}
 \descript{| \hspace{2pt} Research and Innovation Internship}
 
 \location{August - September 2013 | Charleroi, Belgium}
-Topic: \textit{Feasibility Analysis of an Electro-Mechanical Control System for Ariane Rocket Boosters}. Supervisor: Prof. Dr. Marc Bekemans.
+Topic: \textit{Feasibility Analysis of an Electro-Mechanical Control System for Ariane Rocket Boosters}.
 
-\vspace{10pt}
+\vspace{9pt}
 %------------------------------------------------
 
 \runsubsection{UMONS}
 \descript{| \hspace{2pt} Research Initiation Internship}
 \location{July - August 2011 | Mons, Belgium}
-Topic: \textit{Semi-Automatic Creation of a 3D Model for the City of Mons}. Supervisor: Prof. Dr. T. Dutoit. IT Cluster
+Topic: \textit{Semi-Automatic Creation of a 3D Model for the City of Mons}.
 
-\vspace{10pt}
+\vspace{9pt}
 %------------------------------------------------
 
 \runsubsection{UMONS}
 \descript{| \hspace{2pt} Research Initiation Internship}
 \location{July - August 2010 | Mons, Belgium}
-Topic: \textit{Implementation of C/C++ Libraries in TRNSYS 16.1 for Heat Pump Study}. Supervisor: R. Lepore. Energy Cluster
+Topic: \textit{Implementation of C/C++ Libraries in TRNSYS 16.1 for Heat Pump Study}.
 
-\vspace{15pt}
+\vspace{14pt}
 
 %------------------------------------------------
 % Formation
@@ -126,10 +127,9 @@ Topic: \textit{Implementation of C/C++ Libraries in TRNSYS 16.1 for Heat Pump St
 \vspace{2pt}
 \descript{Master Thesis at the Space Systems Laboratory}
 \location{June 2014 – November 2014 | Cambridge, USA}
-Topic: \textit{Calibration and Fusion of Stereoscopic and Time-of-Flight Cameras for Zero Gravity Targets Inspection}. Supervisor: Dr. Alvar Saenz-Otero. Passed with the highest mention.
-\textit{Transversal activities:}  Sailing
+Topic: \textit{Calibration and Fusion of Stereoscopic and Time-of-Flight Cameras for Zero Gravity Targets Inspection}. Passed with the highest mention.
 
-\vspace{10pt}
+\vspace{9pt}
 %------------------------------------------------
 
 \runsubsection{ISAE | SUPAERO\\}
@@ -137,67 +137,26 @@ Topic: \textit{Calibration and Fusion of Stereoscopic and Time-of-Flight Cameras
 \descript{Master of Science in AeroSpace Engineering}
 \location{August 2012 – November 2014 | Toulouse, France}
 Double Master Degree trough \textit{T.I.M.E.} Network. Major : Space Systems, Telecommunications and Networks.
-Transversal activities: CubeSat (2012-2014) \textbullet{} Scuba Diving (2013-2014) \textbullet{} Supaero Jazz Band (2012-2014) \textbullet{} Rowing (2013)
 
-\vspace{10pt}
+\vspace{9pt}
 %------------------------------------------------
 
 \runsubsection{UMONS | Faculté Polytechnique\\}
 \vspace{2pt}
 \descript{Master of Science in Electrical Engineering}
 \location{September 2011 – November 2014 | Mons, Belgium}
-Major: Multimedia et Telecommunications.
-Graduated with Honors.
-\textit{Transversal activities:} Winner of a GDF Suez scholarship (2012)  \textbullet{} Student Regional Committee (2009-2012) \textbullet{} Board of Faculty (2011-2012)  \textbullet{} Commission of Academic Program Evaluation (2011-2012)
+Major: Multimedia et Telecommunications. Graduated with Honors.
 
 \vspace{3pt}
 \descript{Bachelor of Science in Engineering}
 \location{September 2008 – June 2011 | Mons, Belgium}
-Graduated with Honors.
-\textit{Transversal activities:} Board of Libraries (2010-2011) \textbullet{} Student Culture Committee (2010-2011) \textbullet{} Jazz Band Baudour (2001-2011) \textbullet{} Drums \textbullet{} Trumpet \textbullet{} Piano \textbullet{} Choral
+Major: Electricity and Electronics. Graduated with Honors.
 
 %----------------------------
 %	SECOND PAGE
 %----------------------------
 \pagebreak
 \vspace*{0.1pt}
-
-%------------------------------------------------
-% Publications
-%------------------------------------------------
-
-\section{Publications}
-\vspace{5pt}
-
-\textbf{Body Randomization Reduces the Sim-to-Real Gap for Compliant Quadruped Locomotion}. \\
-A. Vandesompele, G. Urbain, H. Mahmud,  F. wyffels and J. Dambre.
-In \textit{Frontiers in Neurorobotics 13, 9}. 2019
-
-\vspace{5pt}
-\textbf{Calibration Method to Improve Transfer from Simulation to Quadruped Robots}. \\
-G. Urbain, A. Vandesompele, F. wyffels and J. Dambre.
-\textit{International Conference on Simulation of Adaptive Behavior, 102-113}. 2018
-
-\vspace{5pt}
-\textbf{Design of a Bio-inspired Compliant Quadruped Robot for Research on Closed-Loop Locomotion Control}.\\
-G. Urbain, A. Vandesompele, F. wyffels and J. Dambre.
-\textit{2nd HBP Student Conference: Transdisciplinary Research Linking Neuroscience, Brain Medicine and Computer Science}. 2018
-
-\vspace{5pt}
-\textbf{Morphological Properties of Mass-Spring Networks for Optimal Locomotion Learning}. \\
-G. Urbain, J. Degrave, B. Carette, F. wyffels and J. Dambre. In \textit{Frontiers in Neurorobotics}. 2017
-
-\vspace{5pt}
-\textbf{A Semantic and Content-Based Search User Interface for Browsing Large Collections of Foley Sounds}. \\
-G. Urbain, C. Frisson, A. Moinet and T. Dutoit. In: \textit{Audio Mostly - A conference on interaction with sound}. 2016
-
-\vspace{5pt}
-\textbf{INSPECT Sensor Suite for On-Orbit Inspection and Characterization with Extravehicular Activity Spacecraft}.\\
-D. Steinberg, T. Sheerin and G. Urbain.
-\textit{45th International Conference on Environmental Systems}. 2015
-
-\vspace{15pt}
-
 
 \begin{minipage}[b]{0.55\linewidth}
 	
@@ -209,9 +168,9 @@ D. Steinberg, T. Sheerin and G. Urbain.
 	
 	\vspace{5pt}
 	\textbf{Audio Search User Interface}.\\
-	G. Urbain, A. Moinet, C. Frisson. Pending with registry number EP3430535. \textit{European Patent Office}. 2017
+	\textbf{G. Urbain}, A. Moinet, C. Frisson. Pending with registry number EP3430535. \textit{European Patent Office}. 2017
 	
-	\vspace{26pt}
+	\vspace{18pt}
 	
 \end{minipage}
 \hfill
@@ -223,15 +182,11 @@ D. Steinberg, T. Sheerin and G. Urbain.
 	
 	\section{Languages}
 	\vspace{5pt}
-	
-	\hspace{0.1pt} \textbf{French  \hspace{7pt} | \hspace{2pt}} Native. C2\\
-	\vspace{1pt}
-	\textbf{English   \hspace{8.8pt}| \hspace{2pt}}  Fluent. C1. TOEFL IBT 105/120 in 2014\\
-	\vspace{1pt}
-	\textbf{Dutch  \hspace{10.5pt} | \hspace{2pt}}  Professional. B2\\
-	\vspace{1pt}
-	\textbf{Spanish  \hspace{3.6pt} | \hspace{2pt}} Basic. A2\\
-	\vspace{1pt}
+	\noindent
+	\textbf{French  \hspace{7.2pt} | \hspace{2pt}} Native. C2\\
+	\textbf{English   \hspace{8.3pt}| \hspace{2pt}}  Fluent. C1. TOEFL IBT 105/120 in 2014\\
+	\textbf{Dutch  \hspace{10.6pt} | \hspace{2pt}}  Professional. B2\\
+	\textbf{Spanish  \hspace{3.7pt} | \hspace{2pt}} Basic. A2\\
 	\textbf{Italian  \hspace{10.1pt} | \hspace{2pt}}  Basic. A1
 	
 \end{minipage}
@@ -283,9 +238,9 @@ D. Steinberg, T. Sheerin and G. Urbain.
 	\subsection{IT and Software}
 	\vspace{2pt}
 	\location{Operating Systems | Middleware}
-	Linux \textbullet{} Embedded Linux \textbullet{} Windows \textbullet{} ROS\\
+	Linux \textbullet{} Embedded Linux \textbullet{} Windows \textbullet{} ROS \textbullet{} Docker\\
 	\vspace{3pt}
-	\location{Programming}
+	\location{Languages}
 	C \textbullet{} C++ \textbullet{} Python \textbullet{} Matlab \textbullet{} Java \textbullet{} Bash \textbullet{} VHDL \textbullet{} OpenCV \textbullet{} Git \textbullet{} \LaTeX\\
 	\vspace{3pt}
 	\location{Embedded Platforms}
@@ -302,35 +257,83 @@ D. Steinberg, T. Sheerin and G. Urbain.
 
 
 %------------------------------------------------
+% Publications
+%------------------------------------------------
+
+\section{Publications}
+\vspace{5pt}
+
+\textbf{Body Randomization Reduces the Sim-to-Real Gap for Compliant Quadruped Locomotion}. \\
+A. Vandesompele, \textbf{G. Urbain}, H. Mahmud,  F. wyffels and J. Dambre.
+In \textit{Frontiers in Neurorobotics 13, 9}. 2019
+
+\vspace{5pt}
+\textbf{Calibration Method to Improve Transfer from Simulation to Quadruped Robots}. \\
+\textbf{G. Urbain}, A. Vandesompele, F. wyffels and J. Dambre.
+\textit{International Conference on Simulation of Adaptive Behavior, 102-113}. 2018
+
+\vspace{5pt}
+\textbf{Design of a Bio-inspired Compliant Quadruped Robot for Research on Closed-Loop Locomotion Control}.\\
+\textbf{G. Urbain}, A. Vandesompele, F. wyffels and J. Dambre.
+\textit{2nd HBP Student Conference: Transdisciplinary Research Linking Neuroscience, Brain Medicine and Computer Science}. 2018
+
+\vspace{5pt}
+\textbf{Morphological Properties of Mass-Spring Networks for Optimal Locomotion Learning}. \\
+\textbf{G. Urbain}, J. Degrave, B. Carette, F. wyffels and J. Dambre. In \textit{Frontiers in Neurorobotics}. 2017
+
+\vspace{5pt}
+\textbf{A Semantic and Content-Based Search User Interface for Browsing Large Collections of Foley Sounds}. \\
+\textbf{G. Urbain}, C. Frisson, A. Moinet and T. Dutoit. In: \textit{Audio Mostly - A conference on interaction with sound}. 2016
+
+\vspace{5pt}
+\textbf{INSPECT Sensor Suite for On-Orbit Inspection and Characterization with Extravehicular Activity Spacecraft}.\\
+D. Steinberg, T. Sheerin and \textbf{G. Urbain}.
+\textit{45th International Conference on Environmental Systems}. 2015
+
+\vspace{15pt}
+
+%------------------------------------------------
 % Organizations
 %------------------------------------------------
 
-\section{Organizations}
+\section{Other Positions}
 \vspace{5pt}
-
-\runsubsection{Human Brain Project (HBP)}
-\descript{| \hspace{2pt} Student Representative}
-\location{2016 - Present | Brussels, Belgium}
-Student ambassador in the HBP Neurorobotics branch (2016, 2017) and elected Student Representative at the HBP Education Programme Committee until May 2019.
-
-\vspace{12pt}
+\begin{minipage}[b]{0.71\linewidth}
+	\runsubsection{Human Brain Project (HBP)}
+	\descript{| \hspace{2pt} Student Representative}
+	\location{2016 - Present | Brussels, Belgium}
+	Student ambassador in the HBP Neurorobotics branch (2016, 2017) and elected Student Representative at the HBP Education Programme Committee until May 2019.
+	
+	\vspace{12pt}
+	
+	%------------------------------------------------
+	
+	\runsubsection{iRobotique}
+	\descript{| \hspace{2pt} Administrator}
+	\location{2004 - Present | Mons, Belgium}
+	Class on electronics, microprocessor programming and robotic design. Participation to Eurobot Junior (2005, 2006, 2008) and Eurobot (2011, 2013) with multiple rewards: Creativity Award (2006), Belgian Junior Champions Award (2008), 8th European Junior position (2008), 7th European position (2013). Design and development of robotic platform for museum guided tours since 2014.
+	
+	\vspace{12pt}
+	
+	%------------------------------------------------
+	
+	\runsubsection{Museomix Belgium}
+	\descript{| \hspace{2pt} Administrator and Organiser}
+	\location{2015 - Present | Brussels, Belgium}
+	Organization of hackatons and events confronting people from technological and cultural backgrounds to define the future of museum mediation in Belgium. Communication and website manager.
+	
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.28\linewidth}
+	\runsubsection{Hobbies}
+	\\ [5pt]
+	\noindent
+	Gent University Symphonic Orchestra (2016-present) \textbullet{} Gent Alumni and Staff Orchestra (2017-present) \textbullet{}  Sailing (2014) \textbullet{}  CubeSat (2012-2014) \textbullet{} Scuba Diving (2013-2014) \textbullet{} Supaero Jazz Band (2012-2014) \textbullet{} Rowing (2013) \textbullet{} Winner of a GDF Suez scholarship (2012)  \textbullet{} Student Regional Committee (2009-2012) \textbullet{} Board of Faculty (2011-2012)  \textbullet{} \textbullet{} Commission of Academic Program Evaluation (2011-2012) \textbullet{}  Board of Libraries (2010-2011) \textbullet{} Student Culture Committee (2010-2011) \textbullet{} Jazz Band Baudour (2001-2011) \textbullet{} Drums \textbullet{} Trumpet \textbullet{} Piano \textbullet{} Choral
+\end{minipage}
 
 %------------------------------------------------
 
-\runsubsection{iRobotique}
-\descript{| \hspace{2pt} Administrator}
-\location{2004 - Present | Mons, Belgium}
-Class on electronics, microprocessor programming and robotic design. Participation to Eurobot Junior (2005, 2006, 2008) and Eurobot (2011, 2013) with multiple rewards: Creativity Award (2006), Belgian Junior Champions Award (2008), 8th European Junior position (2008), 7th European position (2013). Design and development of robotic platform for museum guided tours since 2014.
 
-\vspace{12pt}
 
-%------------------------------------------------
-
-\runsubsection{Museomix Belgium}
-\descript{| \hspace{2pt} Administrator and Organiser}
-\location{2015 - Present | Brussels, Belgium}
-Organization of hackatons and events confronting people from technological and cultural backgrounds to define the future of museum mediation in Belgium. Communication and website manager.
-
-\vspace{10pt}
 
 \end{document}

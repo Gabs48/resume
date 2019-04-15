@@ -8,7 +8,7 @@
 \ProcessOptions\relax
 \LoadClass{article}
 
-\usepackage[hmargin=1.25cm, vmargin=2cm, bottom=2.5cm]{geometry} % Specifies horizontal and vertical page margins
+\usepackage[hmargin=1.25cm, vmargin=1cm, bottom=2.5cm]{geometry} % Specifies horizontal and vertical page margins
 \usepackage{url} % Required for links
 
 %----------------------------------------------------------------------------------------
@@ -18,10 +18,11 @@
 \usepackage[usenames,dvipsnames]{xcolor} % Required for custom colors
 
 \definecolor{primary}{HTML}{2b2b2b} % The primary document color for content text
-\definecolor{headings}{HTML}{6A6A6A} % The color of the large sections
+\definecolor{headings}{RGB}{75, 129, 154} % The color of the large sections
 \definecolor{subheadings}{HTML}{333333} % The color of subsections and places worked/studied
 \definecolor{date}{HTML}{666666} % The color used for the Last Updated text at the top right
-
+\definecolor{subsubheadings}{HTML}{6A6A6A} % The color of the large sections
+\definecolor{description}{RGB}{75, 129, 154}
 %----------------------------------------------------------------------------------------
 %	FONTS
 %----------------------------------------------------------------------------------------
@@ -52,17 +53,30 @@ Last updated on \today % Last Updated text
 %	MAIN HEADING COMMAND
 %----------------------------------------------------------------------------------------
 
-\newcommand{\namesection}[3]{ % Defines the command for the main heading
-\centering{ % Center the name
-\fontsize{40pt}{60pt} % Font size
-\fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1 % First name font
-\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2 % Last name font
-} \\[5pt] % Whitespace between the name and contact information
-\centering{ % Center the contact information
-\color{headings} % Use the headings color
-\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3} % Contact information font
+\setlength{\parindent}{0pt}
+\newcommand{\namesection}[4]{ % Defines the command for the main heading
+\begin{minipage}[b]{0.22\linewidth}
+	\hspace{-9pt}
+	\includegraphics[width=0.9\columnwidth]{img/profile}
+	\vspace{30pt}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.76\linewidth}
+	\hspace{-10pt}
+	\fontsize{40pt}{60pt} % Font size
+	\fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1 % First name font
+	\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2 % Last name font
+	\\ % Whitespace between the name and contact information
+	\color{primary} % Use the headings color
+	\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #4
+	\\[12pt] % Contact information font
+	\color{description}
+	\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{11pt}\selectfont #3
+	\\
+\end{minipage}
+\color{headings}
 \noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}} % Horizontal rule
-\vspace{-5pt} % Reduce whitespace after the rule slightly
+\vspace{-7pt} % Reduce whitespace after the rule slightly
 }
 
 %----------------------------------------------------------------------------------------
@@ -76,7 +90,7 @@ Last updated on \today % Last Updated text
 \newcommand{\sectionspace}{\vspace{8pt}} % Defines a command to add a set amount of space after sections and subsections
 
 \titleformat{\section}{ % Customize the large section titles
-\color{headings}\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{14pt}{20pt}\selectfont \raggedright\uppercase}{}{0em}{}
+\color{headings}\scshape\fontspec[Path = fonts/lato/]{Lato-Reg}\fontsize{14pt}{20pt}\selectfont \raggedright\uppercase}{}{0em}{}
 
 \titleformat{\subsection}{ % Customize the subsections and places worked/studied titles
 \color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{10pt}{10pt}\selectfont\bfseries\uppercase}{}{0em}{}
@@ -84,11 +98,17 @@ Last updated on \today % Last Updated text
 \newcommand{\runsubsection}[1]{ % Used for creating subsections where a description is required on the same line
 \color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{10pt}{10pt}\selectfont\bfseries\uppercase {#1} \normalfont}
 
+\newcommand{\runparagraph}[1]{
+\color{subsubheadings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{10pt}\selectfont {#1} \normalfont}
+
 \newcommand{\descript}[1]{ % Used for describing the subsection either on the same line or underneath
 \color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{11pt}\selectfont {#1 \\} \normalfont}
 
 \newcommand{\location}[1]{ % Used for specifying a duration and/or location under a subsection
-\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{10pt}\selectfont {#1\\} \normalfont}
+\color{subsubheadings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{10pt}\selectfont {#1\\} \normalfont}
+
+\newcommand{\important}[1]{ % Used for specifying a duration and/or location under a subsection
+\color{subsubheadings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{10pt}\selectfont {#1} \normalfont}
 
 %----------------------------------------------------------------------------------------
 %	SECTION TITLE STYLING AND SPACING
