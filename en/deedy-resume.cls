@@ -2,7 +2,7 @@
 %	CLASS OPTIONS AND REQUIRED PACKAGES
 %----------------------------------------------------------------------------------------
 
-\ProvidesClass{deedy-resume}[2014/04/30 CV class]
+\ProvidesClass{deedy-resume}[2019/04/15 CV class]
 \NeedsTeXFormat{LaTeX2e}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax
@@ -10,6 +10,7 @@
 
 \usepackage[hmargin=1.25cm, vmargin=1cm, bottom=2.5cm]{geometry} % Specifies horizontal and vertical page margins
 \usepackage{url} % Required for links
+\usepackage{tabto} % Required for nice tabulations
 
 %----------------------------------------------------------------------------------------
 %	COLORS
